@@ -2,21 +2,21 @@ package priority_queue;
 
 import java.util.Scanner;
 
-class BinaryMinHeap<T> implements PriorityQueue<T>{
+class BinaryHeap<T> implements PriorityQueue<T>{
 
     int INITIAL_CAPACITY = 20;
     int capacity = INITIAL_CAPACITY;
     int size =0;
     Object[] arr;
 
-    BinaryMinHeap(){
+    BinaryHeap(){
         arr = new Object[capacity];
     }
 
     public static void main(String... args){
         System.out.println("Binary Min Heap Impl of Priority Queue");
         Scanner sc = new Scanner(System.in);
-        BinaryMinHeap<Integer> heap = new BinaryMinHeap<>();
+        BinaryHeap<Integer> heap = new BinaryHeap<>();
         Integer val;
         for(int i=0;i<5;i++){
             val = sc.nextInt();
